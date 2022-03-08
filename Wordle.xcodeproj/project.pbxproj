@@ -13,6 +13,8 @@
 		12CFC19B27D7C083003F1481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CFC19927D7C083003F1481 /* Main.storyboard */; };
 		12CFC19D27D7C085003F1481 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CFC19C27D7C085003F1481 /* Assets.xcassets */; };
 		12CFC1A027D7C085003F1481 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CFC19E27D7C085003F1481 /* LaunchScreen.storyboard */; };
+		12CFC1A927D7C25F003F1481 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CFC1A827D7C25E003F1481 /* KeyboardViewController.swift */; };
+		12CFC1AB27D7C26B003F1481 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CFC1AA27D7C26B003F1481 /* BoardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		12CFC19C27D7C085003F1481 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12CFC19F27D7C085003F1481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12CFC1A127D7C085003F1481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CFC1A827D7C25E003F1481 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		12CFC1AA27D7C26B003F1481 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		12CFC19227D7C083003F1481 /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
+				12CFC1A727D7C247003F1481 /* Core */,
 				12CFC19327D7C083003F1481 /* AppDelegate.swift */,
 				12CFC19527D7C083003F1481 /* SceneDelegate.swift */,
-				12CFC19727D7C083003F1481 /* ViewController.swift */,
 				12CFC19927D7C083003F1481 /* Main.storyboard */,
 				12CFC19C27D7C085003F1481 /* Assets.xcassets */,
 				12CFC19E27D7C085003F1481 /* LaunchScreen.storyboard */,
 				12CFC1A127D7C085003F1481 /* Info.plist */,
 			);
 			path = Wordle;
+			sourceTree = "<group>";
+		};
+		12CFC1A727D7C247003F1481 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				12CFC19727D7C083003F1481 /* ViewController.swift */,
+				12CFC1A827D7C25E003F1481 /* KeyboardViewController.swift */,
+				12CFC1AA27D7C26B003F1481 /* BoardViewController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 				12CFC19827D7C083003F1481 /* ViewController.swift in Sources */,
 				12CFC19427D7C083003F1481 /* AppDelegate.swift in Sources */,
 				12CFC19627D7C083003F1481 /* SceneDelegate.swift in Sources */,
+				12CFC1A927D7C25F003F1481 /* KeyboardViewController.swift in Sources */,
+				12CFC1AB27D7C26B003F1481 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
