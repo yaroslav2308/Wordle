@@ -86,18 +86,34 @@ extension ViewController: KeyboardViewControllerDelegate {
         
         var stop = false
         
-        for i in 0..<guesses.count {
-            for j in 0..<guesses[i].count {
-                if guesses[i][j] == nil {
-                    print(letter)
-                    guesses[i][j] = letter
-                    stop = true
+        if letter == "<" {
+            for i in 0..<guesses.count {
+                for j in 0..<guesses[i].count {
+                    if guesses[i][j] == nil && j != 0{
+                        guesses[i][j - 1] = nil
+                        stop = true
+                        break
+                    }
+                }
+                
+                if stop {
                     break
                 }
             }
-            
-            if stop {
-                break
+        } else {
+            for i in 0..<guesses.count {
+                for j in 0..<guesses[i].count {
+                    if guesses[i][j] == nil {
+                        print(letter)
+                        guesses[i][j] = letter
+                        stop = true
+                        break
+                    }
+                }
+                
+                if stop {
+                    break
+                }
             }
         }
         

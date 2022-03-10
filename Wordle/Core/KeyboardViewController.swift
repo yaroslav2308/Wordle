@@ -18,7 +18,7 @@ class KeyboardViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     weak var delegate: KeyboardViewControllerDelegate?
     
-    let letters = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
+    let letters = ["qwertyuiop", "asdfghjkl", "zxcvbnm<"]
     private var keys: [[Character]] = []
     
     let collectionView: UICollectionView = {
